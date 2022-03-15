@@ -3,7 +3,7 @@
      <Navbar />
     <p v-html="sum"></p>
     <img v-if="showElement" alt="Vue logo" src="../assets/logo.png">
-     <button @click="toggleImg">Click me to show or hide IMG</button>
+    <ButtonToggle />
     <Footer />
   </div>
 </template>
@@ -11,12 +11,14 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
+import ButtonToggle from "@/components/ButtonToggle.vue"
 
 export default {
   name: 'HomeView',
   components: {
    Navbar,
    Footer,
+   ButtonToggle,
   },
   data() {
     return {
@@ -24,15 +26,5 @@ export default {
         showElement: false,
     }
   },
-  methods: {
-        toggleImg() {
-           if(!this.showElement) {
-             this.showElement = true;
-           } else {
-             this.showElement = false;
-           }
-        },
-      
-    }
 }
 </script>
