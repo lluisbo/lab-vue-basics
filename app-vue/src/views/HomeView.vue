@@ -3,11 +3,7 @@
      <Navbar />
     <p v-html="sum"></p>
     <img v-if="showElement" alt="Vue logo" src="../assets/logo.png">
-<<<<<<< Updated upstream
-    <ButtonToggle>CLICK ME</ButtonToggle>
-=======
     <ButtonComponent>CLICKE ME</ButtonComponent>
->>>>>>> Stashed changes
     <Footer />
   </div>
 </template>
