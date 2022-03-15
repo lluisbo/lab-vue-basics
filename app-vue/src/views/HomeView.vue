@@ -3,7 +3,11 @@
      <Navbar />
     <p v-html="sum"></p>
     <img v-if="showElement" alt="Vue logo" src="../assets/logo.png">
+<<<<<<< Updated upstream
     <ButtonToggle>CLICK ME</ButtonToggle>
+=======
+    <ButtonComponent>CLICKE ME</ButtonComponent>
+>>>>>>> Stashed changes
     <Footer />
   </div>
 </template>
@@ -11,14 +15,14 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
-import ButtonToggle from "@/components/ButtonToggle.vue"
+import ButtonComponent from "@/components/ButtonComponent.vue"
 
 export default {
   name: 'HomeView',
   components: {
    Navbar,
    Footer,
-   ButtonToggle,
+   ButtonComponent,
   },
   data() {
     return {
