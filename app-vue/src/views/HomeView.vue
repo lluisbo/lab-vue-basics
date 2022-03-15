@@ -3,7 +3,7 @@
      <Navbar />
     <p v-html="sum"></p>
     <img v-if="showElement" alt="Vue logo" src="../assets/logo.png">
-    <ButtonToggle />
+    <ButtonToggle>CLICK ME</ButtonToggle>
     <Footer />
   </div>
 </template>
