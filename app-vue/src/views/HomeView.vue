@@ -1,9 +1,9 @@
 <template>
   <div class="home">
-     <Navbar />
+    <Navbar />
     <p v-html="sum"></p>
     <img v-if="showElement" alt="Vue logo" src="../assets/logo.png">
-    <ButtonComponent>CLICKE ME</ButtonComponent>
+    <ButtonComponent :onClick="showOnClick">CLICKE ME</ButtonComponent>
     <Footer />
   </div>
 </template>
@@ -26,5 +26,14 @@ export default {
         showElement: false,
     }
   },
+  methods: {
+    showOnClick(){
+      if(!this.showElement) {
+        this.showElement = true;
+      } else {
+        this.showElement = false;
+      }
+    }
+  }
 }
 </script>

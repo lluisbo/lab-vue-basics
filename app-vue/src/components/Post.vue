@@ -1,6 +1,6 @@
 <template>
 <div>
-  <ButtonComponent @click="changeBackGroundColor">Change BG color</ButtonComponent>
+  <ButtonComponent :onClick="changeBackGroundColor">Change BG color</ButtonComponent>
   <div class="post" 
      v-for="post in posts" :key="post.id" 
      v-bind:style="isClicked ? { 'background-color': 'red' } : null"
