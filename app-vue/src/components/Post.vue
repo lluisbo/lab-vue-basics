@@ -61,5 +61,7 @@ methods: {
 </script>
 
 <style>
-
+.post {
+  background-color: #42b983;
+}
 </style>
