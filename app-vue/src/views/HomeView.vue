@@ -2,8 +2,8 @@
   <div class="home">
     <Navbar />
     <p v-html="sum"></p>
-    <img v-if="showElement" alt="Vue logo" src="../assets/logo.png">
-    <ButtonComponent :onClick="showOnClick">CLICKE ME</ButtonComponent>
+    <img v-show="showElement" alt="Vue logo" src="../assets/logo.png">
+    <ButtonComponent :onClick="showOnClick">Show Vue logo</ButtonComponent>
     <Footer />
   </div>
 </template>
