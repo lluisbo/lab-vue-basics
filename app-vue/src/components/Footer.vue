@@ -1,6 +1,6 @@
 <template>
   <section>
-      <p>Tdoso los derechos reservados || pruebas 2022</p>
+      <p>Todos los derechos reservados || pruebas 2022</p>
   </section>
 </template>
 
